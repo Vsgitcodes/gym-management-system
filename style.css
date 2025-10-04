@@ -1,0 +1,226 @@
+/* =======================
+   General Styles
+======================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url('assets/gym.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* =======================
+   Login Page Styles
+======================= */
+.login-container {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.9); /* semi-transparent */
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.login-box button:hover {
+  background: #0056b3;
+}
+
+#errorMsg {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}
+
+/* =======================
+   Container for Admin/Member Dashboards
+======================= */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* =======================
+   Form Styling (Add Member)
+======================= */
+.form-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-box input,
+.form-box select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1 1 30%;
+  font-size: 14px;
+}
+
+.form-box button {
+  background: #28a745;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  flex: 1 1 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.form-box button:hover {
+  background: #218838;
+}
+
+/* =======================
+   Table Styling
+======================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  table-layout: auto;
+  display: block;
+  overflow-x: auto; /* scrollable for small screens */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  word-break: break-word;
+  font-size: 14px;
+}
+
+th {
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+button.delete-btn {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.delete-btn:hover {
+  background: #c82333;
+}
+
+/* =======================
+   Member Dashboard Info
+======================= */
+#memberInfo {
+  margin-bottom: 20px;
+}
+
+#memberInfo h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+#memberInfo p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+#downloadBtn {
+  background: #ffc107;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+#downloadBtn:hover {
+  background: #e0a800;
+}
+
+/* =======================
+   Responsive Adjustments
+======================= */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-box input, .form-box select {
+    flex: 1 1 100%;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}

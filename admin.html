@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Admin Dashboard</h2>
+
+    <div class="form-box">
+      <input type="text" id="name" placeholder="Member Name">
+      <input type="email" id="email" placeholder="Member Email">
+      <input type="text" id="fee" placeholder="Fee (₹)">
+      <input type="date" id="joinDate">
+
+      <select id="gender">
+    <option value="">Select Gender</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <select id="plan">
+    <option value="">Select Plan</option>
+    <option value="Monthly">Monthly</option>
+    <option value="Quarterly">Quarterly</option>
+    <option value="Yearly">Yearly</option>
+  </select>
+
+  <input type="text" id="diet" placeholder="Diet Details">
+
+      <button id="addMemberBtn">Add Member</button>
+    </div>
+
+    <h3>Members List</h3>
+<table id="memberTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Fee</th>
+      <th>Join Date</th>
+      <th>Gender</th>
+      <th>Plan</th>
+      <th>Diet Details</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Members will be added here dynamically -->
+  </tbody>
+</table>
+
+  </div>
+
+  <script type="module" src="script/firebase-config.js"></script>
+  <script type="module" src="script/admin.js"></script>
+</body>
+</html>
